@@ -7,12 +7,12 @@ namespace Demo
         static void Main(string[] args)
         {
             #region 02 Non-Generic Collection - Hashtable
-           //Hashtable PhoneBook = new Hashtable();
-           //
-           //PhoneBook.Add("Ahmed", 111111);
-           //PhoneBook.Add("Ali", 2121);
-           //PhoneBook.Add("Mona", 11133);
-           //PhoneBook.Add("Marim", 111451);
+            //Hashtable PhoneBook = new Hashtable();
+            //
+            //PhoneBook.Add("Ahmed", 111111);
+            //PhoneBook.Add("Ali", 2121);
+            //PhoneBook.Add("Mona", 11133);
+            //PhoneBook.Add("Marim", 111451);
 
             //Console.WriteLine(PhoneBook.Count);
             //Console.WriteLine(PhoneBook.IsFixedSize);
@@ -52,6 +52,25 @@ namespace Demo
             ///} 
             #endregion
 
-        }
+            #region 03 Generic Collection - Dictionary
+            //Dictionary<string, long> PhoneBook = new Dictionary<string, long>();
+            //PhoneBook.Add("Ahmed", 111111);
+            //PhoneBook.Add("Ali", 2121);
+            //PhoneBook.Add("Mona", 11133);
+            //PhoneBook.Add("Marim", 111451);
+            //
+            //var Flge = PhoneBook.Remove("Ahmed");
+            //Console.WriteLine(Flge);
+            //
+            //Flge = PhoneBook.Remove("Ahmed", out long re);
+            //Console.WriteLine(Flge);
+            //Console.WriteLine(re);
+            //
+            //foreach (KeyValuePair<string, long> item in PhoneBook)
+            //{
+            //    Console.WriteLine(item);
+            //}
+        } 
+        #endregion
     }
 }
