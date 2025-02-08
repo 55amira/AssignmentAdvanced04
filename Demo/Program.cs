@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Demo.Fifa;
+using System.Collections;
 using System.Reflection.Metadata;
 
 namespace Demo
@@ -87,18 +88,43 @@ namespace Demo
             #endregion
 
             #region 05 Generic Collection - Sorted DS - SortedDictionary
-            SortedDictionary<int, string> pairs = new SortedDictionary<int, string>();
-            pairs.Add(1, "Ahmed");
-            pairs.Add(2, "Omer");
-            pairs.Add(3, "Amr");
+            //SortedDictionary<int, string> pairs = new SortedDictionary<int, string>();
+            //pairs.Add(1, "Ahmed");
+            //pairs.Add(2, "Omer");
+            //pairs.Add(3, "Amr");
 
-            foreach (var pair in pairs)
-            {
-                Console.WriteLine(pair);
-            } 
+            //foreach (var pair in pairs)
+            //{
+            //    Console.WriteLine(pair);
+            //} 
             #endregion
 
+            //06 Generic Collection - Sorted DS - SortedList - SortedSet
+            //SortedList<int,string> pairs = new SortedList<int,string>();
 
+            Ball ball = new Ball() { Id =1};
+            Console.WriteLine(ball);
+
+            ball.Location = new Location() { X = 1, Y = 1, Z = 1 };
+            Console.WriteLine(ball);
+
+            Player P01 = new Player() { Name = "Messi", TeamName = "Miami" };
+            Player P02 = new Player() { Name = "Alba", TeamName = "Miami" };
+
+
+            Player P03 = new Player() { Name = "Pedri", TeamName = "Barcelona" };
+            Player P04 = new Player() { Name = "Gavi", TeamName = "Barcelona" };
+
+            Refere R01 = new Refere() { Name = "Ibrahim" };
+
+           ball.Players.Add(P01);
+            ball.Players.Add(P02);
+            ball.Players.Add(P03);
+            ball.Players.Add(P04);
+            ball.referes.Add(R01);
+
+            ball.Location = new Location() { X = 2, Y = 1, Z = 1 };
+            Console.WriteLine(ball);
         }
 
     }
