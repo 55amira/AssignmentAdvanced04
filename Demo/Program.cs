@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Reflection.Metadata;
 
 namespace Demo
 {
@@ -70,7 +71,29 @@ namespace Demo
             //{
             //    Console.WriteLine(item);
             //}
-        } 
-        #endregion
+            #endregion
+
+            #region 04 Generic Collection - HashSet
+            //HashSet<string> Names = new HashSet<string>();
+
+            //Names.Add("Ahmed");
+            //Names.Add("Ali");
+            //Names.Add("Amr");
+
+            //foreach (var name in Names)
+            //{
+            //    Console.WriteLine(name);
+            //} 
+            #endregion
+
+
+        }
+
+
+
+
+
+
+
     }
 }
