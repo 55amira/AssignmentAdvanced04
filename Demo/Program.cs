@@ -86,14 +86,20 @@ namespace Demo
             //} 
             #endregion
 
+            #region 05 Generic Collection - Sorted DS - SortedDictionary
+            SortedDictionary<int, string> pairs = new SortedDictionary<int, string>();
+            pairs.Add(1, "Ahmed");
+            pairs.Add(2, "Omer");
+            pairs.Add(3, "Amr");
+
+            foreach (var pair in pairs)
+            {
+                Console.WriteLine(pair);
+            } 
+            #endregion
+
 
         }
-
-
-
-
-
-
 
     }
 }
